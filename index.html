@@ -27,8 +27,8 @@
         <!-- Header Section  -->
         <header>
             <nav class="container mx-auto mt-10 ">
-                <div class="navbar bg-red-500 rounded-full">
-                    <div class=" hidden lg:inline-flex	flex-1 ml-10 space-x-4 text-lg text-white  ">
+                <div class="navbar lg:bg-red-500 rounded-full">
+                    <div class=" hidden lg:inline-flex flex-1 ml-10 space-x-4 text-lg lg:text-white  ">
                         <p>Home</p>
                         <p>About Us</p>
                         <p>Shop</p>
@@ -36,19 +36,18 @@
                     </div>
                     <div class="flex-1">
                         <img src="./images/logo.png" alt="">
-                        <h1 class="text-white lg:text-4xl ml-4">Fruit Burst</h1>
+                        <h1 class="lg:text-white text-4xl ml-4">Fruit Burst</h1>
                     </div>
-                    <div class="flex-none gap-2">
+                    <div class=" hidden lg:inline-flex flex-none gap-2 mr-5 ">
                       <div class="form-control relative">
                         <input type="text"  placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full" />
                         <i class=" absolute right-5 top-4 fa-solid fa-magnifying-glass"></i>
                       </div>
-                      <div class="dropdown dropdown-end">
-                        <label tabindex="0" class="btn btn-ghost btn-circle avatar ">
-                        </label>
-                        
-                      </div>
+                      
                     </div>
+                    <button class="btn btn-square btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
                   </div>
             </nav>
             <!-- Carousel Section  -->
@@ -435,7 +434,13 @@
                 <!-- container  -->
                 <div class="grid text-center lg:grid-cols-3 justify-center	 justify-items-center items-center mt-20 mb-20	">
 
-                  <div class=" lg:text-left">
+                  <!-- part one  -->
+
+                  <div class="mt-5 mb-5 lg:order-2">
+                    <img src="./images/whychoose1.png" class="w-80 lg:w-full"  alt="">
+                  </div>
+
+                  <div class=" lg:text-left order-1">
                     <div class="mb-10 lg:flex items-center gap-5" >
                       <div>
                         <i class="bg-slate-200 p-5 rounded-full fa-solid fa-users"></i>
@@ -475,12 +480,10 @@
                       </div>
                     </div>
                   </div>
-                  <!-- part one  -->
-                  <div class="mt-5 mb-5">
-                    <img src="./images/whychoose1.png" class="w-80 lg:w-full"  alt="">
-                  </div>
+                  
+                  
                   <!-- part two  -->
-                  <div class="lg:text-right">
+                  <div class="lg:text-right order-3">
                     <div class="mb-10 lg:flex flex-row-reverse items-center gap-5">
                       <div>
                         <i class=" bg-slate-200 p-5 rounded-full fa-solid fa-parachute-box"></i>
@@ -521,18 +524,11 @@
                       </div>
                     </div>
                   </div>
-                  
-
-
                 </div>
-
-
               </section>
-
             </main>
 
         <!-- Footer Section  -->
-        <footer>
           
           <footer class="footer footer-center p-10 bg-black  text-white -content rounded">
             <div class="flex">
@@ -555,9 +551,6 @@
             </div> 
             
           </footer>
-
-
-        </footer>
     
     </body>
 </html>
